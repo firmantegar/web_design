@@ -1,0 +1,359 @@
+/* Masthead */
+.container-masthead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .masthead-text-content {
+    max-width: 600px;
+  }
+  .masthead-text-content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: white;
+  }
+  .masthead-text-content p {
+    font-size: 1em;
+    margin: 20px 0;
+    color: rgb(155, 155, 155);
+  }
+  .masthead-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .masthead-image-content img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Membership */
+  .container-membership {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width:auto;
+    width: 100%;
+    padding-left: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .membership-text-content {
+    max-width: 600px;
+  }
+  .membership-text-content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: white;
+  }
+  .membership-text-content p {
+    font-size: 2em;
+    margin: 20px 0;
+    color: white;
+  }
+  
+  .membership-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .membership-image-content img {
+    width: 80%;
+    height: 80%;
+  }
+  
+  /* Schedule */
+  .schedule-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: auto;
+    width: 100%;
+    padding: 70px;
+    background-color: black;
+    /* border-radius: 10px; */
+    /* margin: auto; */
+  }
+  .schedule-image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .schedule-text-content {
+    max-width: 600px;
+    /* margin-left: 20px; */
+  }
+  .schedule-text-content h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+  }
+  .schedule-text-content p {
+    font-size: 1em;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .schedule-text-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  .schedule-text-content ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .schedule-text-content ul li::before {
+    content: '✔';
+    color: #e91e63;
+    margin-right: 10px;
+  }
+  .schedule-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto 0;
+    display: block;
+    width: fit-content;
+  }
+
+  /* team */
+  .team-container {
+    /* max-width: 1200px;
+    width: 100%; */
+    text-align: center;
+}
+h1 {
+    font-size: 2.5em;
+    /* margin-bottom: 20px; */
+}
+.team-grid {
+    display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+}
+.trainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trainer img {
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+}
+.trainer-name {
+    margin-top: 10px;
+    font-size: 1em;
+}
+.team-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Blog */
+
+.blog-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: auto;
+    width: 100%;
+    padding: 80px;
+    background-color: black;
+}
+
+.blog-item {
+    display: flex;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-item img {
+    max-width: 1200px;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.blog-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-content h2 {
+    margin-top: 0;
+}
+
+.blog-content p {
+    flex-grow: 1;
+    font-size: 11px;
+}
+
+a {
+    color: #ff4081;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+.contact-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* max-width: 1200px; */
+    background-color: #222;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+
+.contact-text-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-text-section h1 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.contact-text-section p {
+    margin: 20px 0;
+}
+
+.contact-form {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-form input {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e03572;
+}
+
+.contact-image-section {
+    flex: 1;
+}
+
+.contact-image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About */
+
+.about-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1200px; */
+    padding: 20px 40px;
+    background-color: #222;
+    /* border-radius: 10px; */
+}
+
+.about-footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-footer-item p {
+    margin: 0;
+}
+
+.about-footer-item i {
+    color: #ff4081;
+    margin-right: 10px;
+}
+
+.about-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.about-social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.about-sign-up-button {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.about-sign-up-button:hover {
+    background-color: #e03572;
+}
+
